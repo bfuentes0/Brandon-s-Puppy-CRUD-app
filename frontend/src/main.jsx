@@ -9,8 +9,8 @@ createRoot(document.getElementById("root")).render(
     <AsgardeoProvider
       clientId="ZtwJ3yfdjIts2JtBx4NzAhCX_Pwa"
       baseUrl="https://api.asgardeo.io/t/brandonmis372t"
-      signInRedirectURL="http://localhost:5173"
-      signOutRedirectURL="http://localhost:5173"
+      signInRedirectURL="https://brandon-s-puppy-crud-app-1.onrender.com"
+      signOutRedirectURL="https://brandon-s-puppy-crud-app-1.onrender.com"
       scope={["openid", "profile"]}
     >
       <App />
