@@ -100,7 +100,6 @@ useEffect(() => {
             <th>Name</th>
             <th>Breed</th>
             <th>Age</th>
-            <th>User ID</th>
             <th>Actions</th>
           </tr>
         </thead>
@@ -112,7 +111,6 @@ useEffect(() => {
               <td>{p.name}</td>
               <td>{p.breed}</td>
               <td>{p.age}</td>
-              <td>{p.user_id ?? "-"}</td>
 
               <td>
                 <button onClick={() => handleEdit(p.id)}>Edit</button>
