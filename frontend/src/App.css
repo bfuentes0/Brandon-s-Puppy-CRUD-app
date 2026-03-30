@@ -1,0 +1,140 @@
+/* base layout */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  /* add subtle gradient background */
+  background: linear-gradient(135deg, #f0f4ff 0%, #e1eaff 100%);
+  min-height: 100vh;
+  color: #333;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* new styles for table and form */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+table th,
+table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9faff;
+}
+
+table th {
+  background-color: #4a69bd;
+  color: white;
+}
+
+input,
+select,
+textarea {
+  padding: 0.5rem;
+  margin: 0.25rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  margin: 0.25rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s;
+}
+
+button[type="submit"] {
+  background-color: #4a69bd;
+  color: white;
+}
+
+button:hover {
+  background-color: #3b558f;
+}
+
+h1, h2 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #ccc;
+  margin: 2rem 0;
+}
+
+
+.employee-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.employee-form input {
+  flex: 1 1 200px;
+}
+
+.employee-form button {
+  flex: 0 1 auto;
+}
+/* make inputs and buttons stretch on smaller screens */
+@media (max-width: 600px) {
+  input, button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
